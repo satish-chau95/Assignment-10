@@ -10,18 +10,6 @@ This repository contains a chat application built with React and Node.js.
 
 ## Available Scripts
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. The page will reload if you make edits, and you will see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in interactive watch mode. See the [running tests](https://facebook.github.io/create-react-app/docs/running-tests) section for more information.
-
-### `yarn build`
-
 Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified, and the filenames include hashes. Your app is ready to be deployed!
 
 ## Backend Setup
@@ -38,10 +26,10 @@ Install the backend dependencies:
 npm install
 ```
 
-Start the backend server:
+Start the backend server with strapi:
 
 ```bash
-npm start
+npm run develop
 ```
 
 Ensure the backend server is running before starting the frontend.
@@ -51,13 +39,13 @@ Ensure the backend server is running before starting the frontend.
 Navigate back to the root directory and install frontend dependencies:
 
 ```bash
-yarn install
+npm install
 ```
 
 Start the frontend application:
 
 ```bash
-yarn start
+npm start
 ```
 
 ## Deployment
@@ -65,7 +53,7 @@ yarn start
 To deploy the frontend application, run:
 
 ```bash
-yarn build
+npm run build
 ```
 
 This will create a `build` folder with the production build of your app. You can then deploy this folder to your preferred hosting platform.
